@@ -1,4 +1,4 @@
-package com.ekiras.ds.traversal;
+package com.ekiras.ds.trees.traversal;
 
 import com.ekiras.ds.base.TreeNode;
 

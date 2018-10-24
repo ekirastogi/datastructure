@@ -1,8 +1,8 @@
-package com.ekiras.ds.traversal;
+package com.ekiras.ds.trees.traversal;
 
 import com.ekiras.ds.base.TreeNode;
 
-public class PostOrderTreeTraversal {
+public class InOrderTreeTraversal {
 
     public static void main(String[] args) {
         //         1
@@ -17,15 +17,15 @@ public class PostOrderTreeTraversal {
         node.right = new TreeNode(3);
         node.right.right = new TreeNode(6);
 
-        postOrder(node);
+        inOrder(node);
     }
 
-    private static void postOrder(TreeNode node)
+    private static void inOrder(TreeNode node)
     {
         if(node==null)
             return;
-        postOrder(node.right);
-        postOrder(node.left);
         System.out.print(node.data+" ");
+        inOrder(node.left);
+        inOrder(node.right);
     }
 }
