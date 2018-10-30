@@ -24,8 +24,8 @@ public class PostOrderTreeTraversal {
     {
         if(node==null)
             return;
-        postOrder(node.right);
         postOrder(node.left);
+        postOrder(node.right);
         System.out.print(node.data+" ");
     }
 }
